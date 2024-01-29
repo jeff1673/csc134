@@ -7,10 +7,13 @@ Jeff-Michael Fowe
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 int main ()
 {   
+    cout << "Thank you for coming here" << endl;
+    cout << "----------------------" << endl;
     string meal = "Chawarma";
     // all in $, except the percent
     double meal_price = 5.99;
@@ -19,11 +22,16 @@ int main ()
     double total = 0;
 
     // do callculations
+    tax_amount = meal_price * tax_percent;
+    total = meal_price + tax_amount;
 
     // print the receipt
-    // TODO: make it line up, and fix decimals
+    // print this oncce to set thhe decimals to exactly 2
+    cout << fixed << setprecision(2);
     cout << meal << "\t$" << meal_price  << endl;
     cout << "tax" << "\t\t$" << tax_amount << endl;
-    cout << "total" << "\t\t$" << total << endl; 
+    cout << "----------------------" << endl;
+    cout << "Total" << "\t\t$" << total << endl; 
+
     return 0;
 }
