@@ -16,22 +16,23 @@ int main()
     double acc_num, ini_balance, deposit, withdrawal, fin_balance;
     acc_num = 123445;
     cout << "Question 1" << endl;
-    cout << "What is your first name?" ;
+    cout << "What is your first name? " ;
     cin >> fname;
-    cout << "What is your last name?";
+    cout << "What is your last name? ";
     cin >> lname;
-    cout << "What is your starting account balance?";
+    cout << "What is your starting account balance? ";
     cin >> ini_balance;
-    cout << "What amount do you wish to deposit?";
+    cout << "What amount do you wish to deposit? ";
     cin >> deposit;
-    cout << "How much do you wish to withdraw?";
+    cout << "How much do you wish to withdraw? ";
     cin >> withdrawal;
     full_name = fname + " " + lname;
     cout << "Account name:  " << full_name << endl;
     cout << "Account number:  " << acc_num << endl;
     fin_balance = ini_balance + deposit - withdrawal;
     cout << fixed << setprecision(2);
-    cout << "Final account balance: $" << fin_balance << endl;
+    cout << "Final account balance: $" << fin_balance << endl << endl << endl;
+    
 
 
     // Next Question
@@ -59,7 +60,7 @@ int main()
     cout << "The volume is: "<< volume << endl;
     cout << "The cost is: $"<< cost << endl;
     cout << "The charge is: $"<< charge << endl;
-    cout << "The profit is: $"<< profit << endl;
+    cout << "The profit is: $"<< profit << endl << endl << endl;
     
     // Next Question
 
@@ -72,7 +73,7 @@ int main()
     cout << "How many visitors are you expecting?";
     cin >> num_visitors;
     rem_pizza = (slice_per_pizza * num_pizza) - (3 * num_visitors);
-    cout << "The number of pieces of pizza left is " << rem_pizza << endl;
+    cout << "The number of pieces of pizza left is " << rem_pizza << endl << endl << endl;
 
     // Next Question
     cout <<"Question 4" <<endl;
@@ -88,7 +89,7 @@ int main()
     cout << cheerTwo << endl;   
 
     
-    return 0;
+    
 
 
     return 0;
