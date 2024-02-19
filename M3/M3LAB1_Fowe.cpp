@@ -45,7 +45,6 @@ int main() {
   	cout << "You chose Turkey" << endl;
     cout << "Turkey is just chicken more difficult to cook!" << endl;
     cout << "Choose another sandwich" << endl;
-    cout << choice;
     cin >> choice;
     if ("Ham" == choice){
         cout << "Would you like coffee as well? Yes or No?" << endl;
