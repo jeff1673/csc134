@@ -21,9 +21,16 @@ int magazine [MAX_SIZE] = {LIVE, BLANK, LIVE, BLANK, EMPTY, EMPTY};
 
 int main(){
     cout << "M6LAB1" << endl;
-    // range bsed for loop
+    // range based for loop
     for (int shell : magazine) {
         cout << shell_name(shell) << ", " ;
+    }
+    cout << endl << endl;
+    // index based for loop
+    for (int i=0; i<MAX_SIZE; i++){
+        int shell = magazine[i];
+        string name = shell_name(shell);
+        cout << name << ", ";
     }
     cout << endl;
     return 0;
